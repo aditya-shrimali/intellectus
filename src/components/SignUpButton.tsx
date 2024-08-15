@@ -10,7 +10,7 @@ const SignUpButton = (props: Props) => {
     <Button
       variant="ghost"
       onClick={() => {
-        signUp("google");
+        signIn("google");
       }}
     >
       Sign Up
