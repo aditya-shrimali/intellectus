@@ -23,8 +23,12 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="text-xl text-gray-400 mb-12">
+        <p className="text-xl text-gray-400 mb-12 max-w-[50%] mx-auto">
           Your AI-powered education assistant
+          <br />
+          Enter in a course title , or what you want to learn about.Then enter
+          the list of units which are the specifics you want to learn. And our
+          AI will generate a course for you!
         </p>
 
         <div className="flex space-x-4">

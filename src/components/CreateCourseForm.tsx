@@ -8,7 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "./ui/input";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
-import { Plus, Trash } from "lucide-react";
+import { Loader2, Plus, Trash } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "./ui/use-toast";
@@ -168,6 +168,7 @@ const CreateCourseForm = (props: Props) => {
             size="lg"
           >
             lets go!
+            {isLoading && <Loader2 className="animate-spin ml-3" />}
           </Button>
         </form>
       </Form>

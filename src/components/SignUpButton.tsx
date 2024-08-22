@@ -10,7 +10,7 @@ const SignUpButton = (props: Props) => {
     <Button
       variant="ghost"
       onClick={() => {
-        signIn("google");
+        window.location.href = "/signup";
       }}
     >
       Sign Up

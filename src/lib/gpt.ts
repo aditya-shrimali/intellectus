@@ -152,7 +152,9 @@ import {
   GenerationConfig,
 } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI("AIzaSyAtNbvJR1_6-qZl89iLMNSE3KCwMcxcibE");
+const apikey = process.env.GOOGLE_API_KEY || "";
+
+const genAI = new GoogleGenerativeAI(apikey);
 
 interface OutputFormat {
   [key: string]: string | string[] | OutputFormat;
