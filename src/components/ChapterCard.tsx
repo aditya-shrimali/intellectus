@@ -176,7 +176,7 @@ const ChapterCard = React.forwardRef<ChapterCardHandler, Props>(
         key={chapter.id}
         className={cn("px-4 py-2 mt-2 rounded flex justify-between", {
           "bg-secondary": success === null,
-          "bg-green-500": success === false,
+          "bg-red-500": success === false,
           "bg-green-500": success === true,
         })}
       >
