@@ -100,12 +100,12 @@ export async function POST(req: Request) {
     let output_units: OutputUnits = await strict_output(
       "You are an AI capable of curating course content, coming up with relevant chapter titles, and finding relevant YouTube videos for each chapter. Output only the JSON structure specified without additional text.",
       new Array(units.length).fill(
-        `Create a course about "${title}". Generate chapters for each unit and provide a YouTube search query for each chapter. The output should be in JSON format with each unit containing a 'title' and 'chapters' where each chapter has a 'youtube_search_query' and 'chapter_title'.`
+        `Create a course about "${title}". Generate 3 chapters for each unit and provide a YouTube search query for each chapter. The output should be in JSON format with each unit containing a 'title' and 'chapters' where each chapter has a 'youtube_search_query' and 'chapter_title'.`
       ),
       {
         title: "title of the unit",
         chapters:
-          "an array of chapters, each chapter should have a youtube_search_query and a chapter_title key in the JSON object",
+          "an array of 3 chapters, each chapter should have a youtube_search_query and a chapter_title key in the JSON object",
       }
     );
 
