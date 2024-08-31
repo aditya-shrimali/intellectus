@@ -2,20 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "src/**/*.{js,ts,jsx,tsx}",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "next.config.js",
+        "src": "package.json",
         "use": "@vercel/next"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "/src/$1"
+        "dest": "/"
       }
-    ],
-    "ignoreCommand": "git diff --quiet HEAD^ HEAD ./src"
+    ]
   }
-  
