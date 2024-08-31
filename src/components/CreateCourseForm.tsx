@@ -25,7 +25,7 @@ const CreateCourseForm = (props: Props) => {
   const { mutate: createChapters, isLoading } = useMutation({
     mutationFn: async ({ title, units }: Input) => {
       const response = await axios.post(
-        "http://localhost:3000/api/course/createChapters",
+        "https://intellectus-iota.vercel.app/api/course/createChapters",
         {
           title,
           units,
