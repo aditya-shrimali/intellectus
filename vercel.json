@@ -26,5 +26,11 @@
           "x-xss-protection": "1; mode=block"
         }
       }
-    ]
+     
+    ],
+    "functions": {
+      "api/**/*.js": {
+        "maxDuration": 60
+      }
+    }
   }
